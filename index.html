@@ -22,13 +22,13 @@
             <div class="links">
                 <a href=""><i class="fab fa-linkedin"></i></a>
                 <a href=""><i class="fab fa-instagram"></i></a>
-                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-discord"></i></a>
             </div>
         </nav>
         <div class="wrapper">
             <div class="cols cols0">
                 <span class="topline">Hello</span>
-                <h1>I'm <span class="multiText">Coder</span></h1>
+                <h1>I'm <span class="multiText"></span></h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adispicing elit. Alias pariatur dicta suscipit ratione veritatis dolor saepe harum. Amet, totam earum</p>
                 <div class="btns">
                     <button>Download CV</button>
@@ -42,7 +42,17 @@
                 </div>
             </div>
         </div>
-
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typingEffect = new Typed(".multiText",{
+                strings : ["Student", "Coder", "Journalist", "Designer"],
+                loop : true,
+                typeSpeed : 100,
+                backSpeed : 80,
+                backDelay : 1500,
+                
+            });
+        </script>
     </div>
 </body>
 </html>

@@ -116,12 +116,12 @@ b {
     }
 }
 
-.cols0 {
-    z-index: 5;
-}
-
 .cols {
     width: 50%;
+}
+
+.cols0 {
+    z-index: 5;
 }
 
 .topline {
@@ -143,7 +143,7 @@ b {
 
 h1 {
     display: block;
-    font-size: 7em;
+    font-size: 5em;
     font-weight: 900;
     color: #3d535f;
 }
