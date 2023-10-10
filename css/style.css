@@ -8,23 +8,31 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .container {
     width: 100%;
     min-height: 100vh;
-    background-color: #f3f5f8;
+    background-color: #fff;
+}
+
+.dummy {
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 3;
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     display: flex;
     width: 100%;
     justify-content: space-around;
     height: 80px;
     line-height: 80px;
-    z-index: 111;
+    z-index: 100;
 }
 
 .logo {
@@ -81,13 +89,14 @@ b {
 .wrapper::before{
     position: absolute;
     content: '';
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     left: -12%;
     top: 40%;
     background: linear-gradient(45deg, #7f00ff, pink);
     animation: object1 6s linear infinite;
+    z-index: 1;
 }
 
 .wrapper::after{
@@ -121,7 +130,7 @@ b {
 }
 
 .cols0 {
-    z-index: 5;
+    z-index: 3;
 }
 
 .topline {
@@ -225,4 +234,12 @@ button:hover {
         right: 30px;
         top: 300px;
     }
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f3f5f8;
+    z-index: 4;
 }
