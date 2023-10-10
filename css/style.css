@@ -18,6 +18,7 @@ body {
 }
 
 nav {
+    position: sticky;
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -71,10 +72,52 @@ b {
 .wrapper {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     justify-content: center;
     align-items: center;
     margin: 0 7.5%;
+}
+
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    left: -12%;
+    top: 40%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object1 6s linear infinite;
+}
+
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    animation: object2 6s linear infinite;
+}
+
+@keyframes object1 {
+    50% {
+        left: -13%;
+        top: 41%;
+    }
+}
+
+@keyframes object2 {
+    50% {
+        left: 35%;
+        top: 10%;
+    }
+}
+
+.cols0 {
+    z-index: 5;
 }
 
 .cols {
@@ -151,8 +194,35 @@ button:hover {
 
 .imgbox img {
     position: relative;
-    height: 100%;
-    width: calc(130% - 80px);
-    top: -100px;
+    height: 50%;
+    width: calc(120% - 140px);
+    top: -50px;
     right: 50px;
+    transform: rotateY(180deg);
+    /* animation: animateUser 4s linear infinite; */
+}
+
+@keyframes animateUser {
+    50%{
+        right: 30px;
+        top: -90px;
+    }
+}
+
+.imgbox #splash {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%) rotate(-35deg);
+    width: 80%;
+    height: 80%;
+    filter: saturate(200%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    50%{
+        right: 30px;
+        top: 300px;
+    }
 }
