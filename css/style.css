@@ -257,7 +257,7 @@
         position: absolute !important;
         width: 100%;
         min-height: 100vh;
-        background-color: black;
+        background-color: #fff;
         z-index: 4;
     }
 
@@ -289,11 +289,28 @@
         font-size: 15px;
         font-weight: lighter;
         margin-top: 40px;
-        text-align: justify;
-        padding: 0 8rem;
+        text-align: center;
+        padding: 0 10rem;
         word-spacing: 5px;
+        letter-spacing: 1px;
     }
 
     p.indent {
         text-indent: 30px;
     }
+
+    .iconAbout {
+        width: 300px; 
+        height: 300px;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 1150px;
+        }
+
+        .iconAbout1 {
+            width: 300px; 
+            height: 300px;
+            position: absolute;
+            margin-top: 300px;
+            right: 1150px;
+            }
