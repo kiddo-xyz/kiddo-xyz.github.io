@@ -179,7 +179,7 @@
 
     .btns {
         width: 100%;
-        position: relative;
+        /* position: relative; */
         left: 150px;
     }
 
@@ -256,7 +256,7 @@
         top: 250vh;
         position: absolute !important;
         width: 100%;
-        min-height: 100vh;
+        min-height: 250vh;
         background-color: #fff;
         z-index: 4;
     }
@@ -307,10 +307,98 @@
         margin-left: 1150px;
         }
 
-        .iconAbout1 {
-            width: 300px; 
-            height: 300px;
-            position: absolute;
-            margin-top: 300px;
-            right: 1150px;
-            }
+    .iconAbout1 {
+        width: 300px; 
+        height: 300px;
+        position: absolute;
+        margin-top: 300px;
+        right: 1150px;
+        }
+
+    h1.experience {
+        font-size: 3em;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .border-container {
+        margin-top: 40px;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+
+    .border-box {
+        width: 60%;
+        height: auto;
+        text-align: left;
+    }
+
+    .border-list {
+        margin-top: 20px;
+        border: 1px solid #3d535f;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .border-list ul li {
+        list-style: none;
+    }
+
+    .exp-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        text-decoration: underline 2px #7f00ff;
+    }
+
+
+    .exp-date {
+        font-style: italic;
+        
+    }
+
+    .exp-desc {
+        margin-top: 5px;
+        font-size: 15px;
+        
+    }
+
+    .blogs {
+        top: 460vh;
+        position: absolute !important;
+        width: 100%;
+        min-height: 150vh;
+        background-color: #f3f5f8;
+        z-index: 9;
+    }
+
+    .title-blogs {
+        font-family: poppins, sans-serif;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 100px;
+        text-decoration: underline #7f00ff;
+    }
+
+    .border-blogs {
+        margin-top: 40px;
+        width: 100%;
+        display: grid;
+        place-items: center;
+        text-align: center;
+    }
+
+    .border-card {
+        width: 60%;
+        height: auto;
+        text-align: center;    
+    }
+
+    .border-card-content {
+        margin-top: 20px;
+        /* border: 1px solid #3d535f; */
+        padding: 20px;
+        border-radius: 20px;
+    }
